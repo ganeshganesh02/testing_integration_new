@@ -13,6 +13,11 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
+
+- task: UiPathInstallPlatform@5
+  inputs:
+    cliVersion: 'WIN_25.4.9239.19674'
+
 - task: UiPathPack@5
   inputs:
     versionType: 'AutoVersion'
